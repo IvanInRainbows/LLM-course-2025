@@ -243,3 +243,5 @@ cython_debug/
 .sesskey
 
 *.html
+
+apikeys.json

@@ -2,15 +2,18 @@ from fasthtml.common import *
 import google.generativeai as genai
 import strip_markdown
 import configparser
+import os
+import json
 
-API_KEY = os.environ.get("GEMINI_API_KEY")
+path = os.path.dirname(os.path.realpath(__file__))
+API_KEY = json.load(open(path+"/../../apikeys.json"))["Gemini"]
 genai.configure(api_key=API_KEY)
-LLM = "gemini-1.5-flash"
+LLM = "gemini-2.5-flash"
 model = genai.GenerativeModel(LLM)
 
 # Read system prompts from config file
 prompts = configparser.ConfigParser()
-prompts.read('prompts.env')
+prompts.read(path+'/prompts.env')
 
 # Set system prompt
 #system_prompt = prompts.get("SYSTEM_PROMPTS", "IT_HELPDESK")
