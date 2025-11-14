@@ -1,7 +1,5 @@
 # Lab exercise
 
-## First part
-
 I tried both the chatbot python script and the prompting jupyter notebook. I made most of this part in the notebook because the output suited better the task, as the output was written in markdown. For the task I asked Gemini to generate a law that forbids the emission of violent content in the Spanish public television written in formal and academical Spanish and no longer than 4000 characters. For this, three prompting techniques were tested: Zero-shot, One-shot (using the text in a webpage as reference) and, finally, chain of thought (still using the reference from the one-shot). I found all answers to be adequate and well written but with some minor differences:
 
 1. Zero-Shot: The promt was "Can you write a law that forbids the emmission of violent content in the Spanish public television? The text should be no longer than 4000 characters. It should also be written in formal and academical Spanish.". The answer was very well written but with some caveats:
