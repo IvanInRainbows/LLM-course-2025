@@ -245,3 +245,5 @@ cython_debug/
 *.html
 
 apikeys.json
+FinalReport.odt
+week-5/SpeechLangProcessing.pdf
